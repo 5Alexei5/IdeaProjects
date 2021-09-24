@@ -37,6 +37,8 @@ public class Calculator {
 
             } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("Строка не является математической операцией");
+            }catch (ArithmeticException e){
+                System.out.println("На ноль делить нельзя");
             } catch (NumberFormatException e) {
                 System.out.println("Формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
             } catch (ArrayStoreException e){
@@ -47,6 +49,7 @@ public class Calculator {
                 System.out.println("Используются одновременно разные системы счисления");
             }
     }
+
 
     static class ConvertRomToAra {
         public String romTo(String a) {
