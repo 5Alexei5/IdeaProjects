@@ -134,7 +134,7 @@ public class Calculator {
             }
             if (q.equals("/")) {
                 result = a / b;
-            }
+            }else throw new NumberFormatException();
             return result;
         }
     }
