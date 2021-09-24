@@ -65,7 +65,10 @@ public class Calculator {
     static class AraOrRom {
 
         public boolean arab(String a) {
-            String[] arabnamber = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
+            String[] arabnamber = new String[21];
+            for (int i = -10; i<11;i++){
+                arabnamber[i+10] = String.valueOf(i);
+            }
             boolean q = false;
             for (int i = 0; i < arabnamber.length; i++) {
                 if (a.equals(arabnamber[i])) {
