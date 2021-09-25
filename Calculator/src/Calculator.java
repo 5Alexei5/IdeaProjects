@@ -126,13 +126,13 @@ public class Calculator {
             if (q.equals("+")) {
                 result = a + b;
             }
-            if (q.equals("-")) {
+            else if (q.equals("-")) {
                 result = a - b;
             }
-            if (q.equals("*")) {
+            else if (q.equals("*")) {
                 result = a * b;
             }
-            if (q.equals("/")) {
+            else if (q.equals("/")) {
                 result = a / b;
             }else throw new NumberFormatException();
             return result;
